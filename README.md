@@ -45,6 +45,22 @@ Note: Please put explanation for your new folders
 
 **Saved-model:** Contains a saved trained GCN model for initial prediction with first guess of hyperparameters 
 
+
+------------------------------------------
+
+## Web application
+
+
+You can use the RedPred web application by following [this link](https://share.streamlit.io/mcsorkun/redpred-web/main/app.py).
+
+------------------------------------------
+
+## Report an Issue 
+             
+You are welcome to report a bug or contribuite to the web application by filing an [issue](https://github.com/mcsorkun/RedPred/issues).
+
+
+
 ------------------------------------------
 
 ## Developers
