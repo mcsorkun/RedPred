@@ -60,6 +60,19 @@ You can use the RedPred web application by following [this link](https://share.s
 You are welcome to report a bug or contribuite to the web application by filing an [issue](https://github.com/mcsorkun/RedPred/issues).
 
 
+------------------------------------------
+
+<h3>
+References:
+
+</h3>
+
+[1]: **Martins, Ines Filipa, et al.** (2012). [A Bayesian approach to
+    in silico blood-brain barrier penetration
+    modeling.](https://pubmed.ncbi.nlm.nih.gov/22612593/) Journal of
+    chemical information and modeling 52.6, 1686-1697
+
+
 
 ------------------------------------------
 
