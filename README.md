@@ -21,7 +21,7 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 
 ------------------------------------------
-## IMAGE
+## IMAGE - Workflow
 
 ![](redpred_app.gif)
 
@@ -47,6 +47,18 @@ Note: Please put explanation for your new folders
 
 
 ------------------------------------------
+
+
+## Dependencies
+
+- rdkit==2020.03.2
+- mordred==1.2.0
+- scikit-learn==0.23.1
+- pandas==1.0.3
+
+
+------------------------------------------
+
 
 ## Web application
 
