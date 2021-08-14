@@ -60,13 +60,16 @@ Note: Please put explanation for your new folders
     - dill==0.3.3
     
 - h5py==2.10.0
+- gensim==3.8.3
 - keras==2.4.3
     - keras-preprocessing==1.1.2
     
 - node2vec==0.4.1
 - numpy==1.18.5
+- pandas==1.1.3
 - tensorflow==2.3.2
 - torch==1.7.1
+- mhfp==1.9.2
 
 
 ------------------------------------------
