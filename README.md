@@ -21,22 +21,22 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 
 ------------------------------------------
-## Workflow - IMAGE 
+## Workflow - IMAGE :
 
 ![](redpred_app.gif)
 
 ------------------------------------------
 
-## Project Files
+## Project Files:
 
 
-**Data: ** Contains the "all_data.csv" file. (Maybe an explanation???? )
+**Data:** Contains the "all_data.csv" file. (Maybe an explanation???? )
 
-**Data_Preprocessing: ** ????
+**Data_Preprocessing:** ????
 
-**Ensemble: ** Code for our final model for the project. We used 3 models for the ensemble model. So the file also contains their saved models and also predictions for Test 1 and  Test 2.
+**Ensemble:** Code for our final model for the project. We used 3 models for the ensemble model. So the file also contains their saved models and also predictions for Test 1 and  Test 2.
 
-**Models: ** Contains final code file of 5 models that we used for RedPred project and ECFC encoder file.
+**Models:** Contains final code file of 5 models that we used for RedPred project and ECFC encoder file.
 
 
 
@@ -49,25 +49,37 @@ Note: Please put explanation for your new folders
 ------------------------------------------
 
 
-## Dependencies
+## Dependencies:
 
-- rdkit==2020.03.2
-- mordred==1.2.0
-- scikit-learn==0.23.1
-- pandas==1.0.3
+- python=3.7.9
+- rdkit=2020.09.1.0
+- scikit-learn=0.23.2
+- deepchem==2.4.0
+- dgl==0.5.3
+    - dgllife==0.2.6
+    - dill==0.3.3
+    
+- h5py==2.10.0
+- keras==2.4.3
+    - keras-preprocessing==1.1.2
+    
+- node2vec==0.4.1
+- numpy==1.18.5
+- tensorflow==2.3.2
+- torch==1.7.1
 
 
 ------------------------------------------
 
 
-## Web application
+## Web application:
 
 
 You can use the RedPred web application by following [this link](https://share.streamlit.io/mcsorkun/redpred-web/main/app.py).
 
 ------------------------------------------
 
-## Report an Issue 
+## Report an Issue:
              
 You are welcome to report a bug or contribuite to the web application by filing an [issue](https://github.com/mcsorkun/RedPred/issues).
 
@@ -86,7 +98,7 @@ You are welcome to report a bug or contribuite to the web application by filing 
 
 ------------------------------------------
 
-## Developers
+## Developers:
 
 * **Murat Cihan Sorkun :** [![](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murat-cihan-sorkun/) 
 
