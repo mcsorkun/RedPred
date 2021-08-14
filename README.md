@@ -21,7 +21,7 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 
 ------------------------------------------
-## IMAGE - Workflow
+## Workflow - IMAGE 
 
 ![](redpred_app.gif)
 
@@ -30,13 +30,13 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 ## Project Files
 
 
-**force_field:** Force field calculations using Rdkit UFF and MMFF methods.
+**Data: ** Contains the "all_data.csv" file. (Maybe an explanation???? )
 
-**merge_data:** Code for combining molecular and reaction datafiles
+**Data_Preprocessing: ** ????
 
-**outlier:** Outlier analysis
+**Ensemble: ** Code for our final model for the project. We used 3 models for the ensemble model. So the file also contains their saved models and also predictions for Test 1 and  Test 2.
 
-**split_data:** Contains a custom split method ensures each 
+**Models: ** Contains final code file of 5 models that we used for RedPred project and ECFC encoder file.
 
 
 
