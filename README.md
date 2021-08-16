@@ -40,7 +40,7 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 
 
-Note: Please put explanation for your new folders
+**Note:** Please put explanation for your new folders
 
 
 **Saved-model:** Contains a saved trained GCN model for initial prediction with first guess of hyperparameters 
