@@ -84,7 +84,7 @@ You can use the RedPred web application by following [this link](https://share.s
 
 ## Report an Issue:
              
-You are welcome to report a bug or contribuite to the web application by filing an [issue](https://github.com/mcsorkun/RedPred/issues).
+You are welcome to report a bug or contribuite to the RedPred project by filing an [issue](https://github.com/mcsorkun/RedPred/issues).
 
 
 ------------------------------------------
