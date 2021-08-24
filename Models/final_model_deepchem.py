@@ -32,20 +32,17 @@ start_time = time.time()
 print("Get and Arrange data")
 print(" ")
 
-df_data= pd.read_csv('all_data.csv')
 
-input_data_train = df_data[df_data['data_type'] == 0]
-input_data_test1 = df_data[df_data['data_type'] == 1]
-input_data_test2 = df_data[df_data['data_type'] == 2]
 
 """
 
-####Read data from csv files , train, test1 and test2
+####Read data from csv files , train_s, test1 and test2
 
-input_data_train ="../final_data/train_s.csv"
-input_data_test1= '../final_data/test1.csv'
-input_data_test2= '../final_data/test2.csv'
  """
+input_data_train ="../data/train_s.csv"
+input_data_test1= '../data/test1.csv'
+input_data_test2= '../data/test2.csv'
+
 
 # Run before every test for reproducibility
 def seed_all():
