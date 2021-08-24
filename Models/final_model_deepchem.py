@@ -39,9 +39,9 @@ print(" ")
 ####Read data from csv files , train_s, test1 and test2
 
  """
-input_data_train ="../data/train_s.csv"
-input_data_test1= '../data/test1.csv'
-input_data_test2= '../data/test2.csv'
+input_data_train ="../Data/train_s.csv"
+input_data_test1= '../Data/test1.csv'
+input_data_test2= '../Data/test2.csv'
 
 
 # Run before every test for reproducibility
