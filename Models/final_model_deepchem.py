@@ -91,7 +91,7 @@ ckpt = tf.train.Checkpoint(step=tf.Variable(1))
 manager = tf.train.CheckpointManager(ckpt, model_dir, max_to_keep=20)
 
 # max_checkpoints_to_keep  = 5 (defult)
-num_epochs = 100
+num_epochs = 94 ## early stopping
 losses_train = []
 score_train = []
 score_valid = []
@@ -163,9 +163,9 @@ test2_res = zip(test2_smile,test2_yo,test2_predo)
 df_test2_pred = pd.DataFrame(test2_res,columns=('smile','test2_y','test2_pred'))
                       
  
-df_train_pred.to_csv('init_pred_train.csv')
-df_test1_pred.to_csv('init_pred_test1.csv')
-df_test2_pred.to_csv('init_pred_test2.csv')
+df_train_pred.to_csv('final_models/GCN_pred_train.csv')
+df_test1_pred.to_csv('final_models/GCN_pred_test1.csv')
+df_test2_pred.to_csv('final_models/GCN_pred_test2.csv')
 
 
 ## evaluation using sklearn 
