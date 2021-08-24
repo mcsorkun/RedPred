@@ -78,7 +78,7 @@ test2_dataset = transformers_train.transform(dataset_test2)
 
 
 ## chose a directory to save train model
-model_dir = "./tf_chp_initial"
+model_dir = "final_models/GCN_chp_final"
 
 model = GraphConvModel(n_tasks=1, batch_size=100, mode='regression', dropout=0.25,model_dir= model_dir,random_seed=0)
 
@@ -114,7 +114,7 @@ for i in range(num_epochs):
 
 ## save loss and score in a file
 df = pd.DataFrame(list(zip(losses_train,score_train,score_valid)),columns = ['train-loss','train-R2score','valid-R2score'])
-df.to_csv('loss-score-train-valid.csv')
+df.to_csv('final_models/GCN_loss-score-train-valid.csv')
 print("--- %s seconds ---" % (time.time() - start_time))
 
 ## figure for loss and score
@@ -163,9 +163,9 @@ test2_res = zip(test2_smile,test2_yo,test2_predo)
 df_test2_pred = pd.DataFrame(test2_res,columns=('smile','test2_y','test2_pred'))
                       
  
-df_train_pred.to_csv('final_models/GCN_pred_train.csv')
-df_test1_pred.to_csv('final_models/GCN_pred_test1.csv')
-df_test2_pred.to_csv('final_models/GCN_pred_test2.csv')
+df_train_pred.to_csv('final_models/GCN_result_train.csv')
+df_test1_pred.to_csv('final_models/GCN_result_test1.csv')
+df_test2_pred.to_csv('final_models/GCN_result_test2.csv')
 
 
 ## evaluation using sklearn 
