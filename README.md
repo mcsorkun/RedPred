@@ -92,10 +92,7 @@ You are welcome to report a bug or contribuite to the RedPred project by filing 
 ## References:
 
 
-[1]: SAMPLE::::**Martins, Ines Filipa, et al.** (2012). [A Bayesian approach to
-    in silico blood-brain barrier penetration
-    modeling.](https://pubmed.ncbi.nlm.nih.gov/22612593/) Journal of
-    chemical information and modeling 52.6, 1686-1697
+[1]: 
 
 
 
