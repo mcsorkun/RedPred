@@ -65,9 +65,6 @@ test2_data = df_data[df_data['data_type'] == 2]
 
 #%%     MODELING
 
-
-# def modeling(train_data, test1_data, test2_data, encoder, model):  - After deciding the list of the smiles
-
 def modeling(train_encoded, test1_encoded, test2_encoded, model):
     
     from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error

@@ -27,7 +27,7 @@ from keras.layers import Dropout
 
 df_data= pd.read_csv('reddb-smiles.csv')
 
-SMILES = df_data["smiles"]
+SMILES = df_data["reactant_smiles"]
 
 
 
