@@ -61,7 +61,7 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 - keras==2.4.3
 - lightgbm==2.3.1
 - xgboost==1.4.2
-
+- h5py==2.10.0
 
 ------------------------------------------
 
