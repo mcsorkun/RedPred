@@ -102,3 +102,4 @@ You are welcome to report a bug or contribuite to the RedPred project by filing 
 ------------------------------------------
 
 
+This project developed at AMD LAB : https://www.amdlab.nl/
