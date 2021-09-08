@@ -47,7 +47,7 @@ def get_ecfp(smiles_list, radius=2, nBits=2048, useCounts=False):
     df_ecfp_fingerprints = pd.DataFrame(data = ecfp_fingerprints, index = smiles_list)
     # Remove erroneous data
     if len(erroneous_smiles)>0:
-        print("The following erroneous SMILES have been found in the data:\n{}.\nThe erroneous SMILES will be removed from the data.".format('\n'.join(map(str, erroneous_smiles))))           
+        #print("The following erroneous SMILES have been found in the data:\n{}.\nThe erroneous SMILES will be removed from the data.".format('\n'.join(map(str, erroneous_smiles))))           
         df_ecfp_fingerprints = df_ecfp_fingerprints.dropna(how='any')    
     
     return df_ecfp_fingerprints
@@ -90,7 +90,7 @@ def get_ecfc(smiles_list, radius=2, nBits=2048, useCounts=True):
     df_ecfp_fingerprints = pd.DataFrame(data = ecfp_fingerprints, index = smiles_list)
     # Remove erroneous data
     if len(erroneous_smiles)>0:
-        print("The following erroneous SMILES have been found in the data:\n{}.\nThe erroneous SMILES will be removed from the data.".format('\n'.join(map(str, erroneous_smiles))))           
+        #print("The following erroneous SMILES have been found in the data:\n{}.\nThe erroneous SMILES will be removed from the data.".format('\n'.join(map(str, erroneous_smiles))))           
         df_ecfp_fingerprints = df_ecfp_fingerprints.dropna(how='any')    
     
     return df_ecfp_fingerprints
@@ -99,9 +99,9 @@ def get_ecfc(smiles_list, radius=2, nBits=2048, useCounts=True):
 
 
 #simple test
-test_smiles_list=["CCCC","CO","ON(c1ccccc1)C(=O)c2ccc(Cl)cc2Cl","CN1C=NC2=C1C(=O)N(C(=O)N2C)C","XXXX"]
-simple_ecfp_result=get_ecfp(test_smiles_list)
-simple_ecfp_count_result=get_ecfp(smiles_list=test_smiles_list,useCounts=True)
+#test_smiles_list=["CCCC","CO","ON(c1ccccc1)C(=O)c2ccc(Cl)cc2Cl","CN1C=NC2=C1C(=O)N(C(=O)N2C)C","XXXX"]
+#simple_ecfp_result=get_ecfp(test_smiles_list)
+#simple_ecfp_count_result=get_ecfp(smiles_list=test_smiles_list,useCounts=True)
 #simple_maccs_result=get_maccs(test_smiles_list)
 #simple_secfp_result=get_secfp(test_smiles_list)
 

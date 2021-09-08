@@ -51,6 +51,8 @@ input_data_train ="../Data/train_s.csv"
 input_data_test1= '../Data/test1.csv'
 input_data_test2= '../Data/test2.csv'
 
+df_data= pd.read_csv('../Data/all_data.csv')
+
 
 
 #%%   ENCODING and MODELING with reactant_smiles

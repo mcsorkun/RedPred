@@ -52,7 +52,7 @@ from fingerprints import get_ecfc
 print("Get and Arrange data")
 print(" ")
 
-df_data= pd.read_csv('all_data.csv')
+df_data= pd.read_csv('../Data/all_data.csv')
 
 train_data = df_data[df_data['data_type'] == 0]
 test1_data = df_data[df_data['data_type'] == 1]
@@ -65,10 +65,12 @@ test2_data = df_data[df_data['data_type'] == 2]
 
 #%%     MODELING
 
-def modeling(train_encoded, test1_encoded, test2_encoded, model):
+def modeling(train_encoded, test1_encoded, test2_encoded, model, model_name):
     
     from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
     import time
+    
+    model_name = model_name 
     start_time = time.time()
     
     # Training
@@ -88,9 +90,9 @@ def modeling(train_encoded, test1_encoded, test2_encoded, model):
     tr_rmse = mean_squared_error(y ,pred_train , squared=False)
     tr_r2 = r2_score(y, pred_train)
     print('##########################  Scores of Train Data  ##########################')
-    print('Train set MAE of {}: {:.3f}'.format(model, tr_mae))
-    print('Train set RMSE of {}: {:.3f}'.format(model, tr_rmse))
-    print('Train set R2 Score of {}: {:.3f}'.format(model, tr_r2))
+    print('Train set MAE of {}: {:.3f}'.format(model_name, tr_mae))
+    print('Train set RMSE of {}: {:.3f}'.format(model_name, tr_rmse))
+    print('Train set R2 Score of {}: {:.3f}'.format(model_name, tr_r2))
     
     print("----------------------------------------------------------------------------")
     
@@ -99,9 +101,9 @@ def modeling(train_encoded, test1_encoded, test2_encoded, model):
     test1_rmse = mean_squared_error(test1_data['reaction_energy'], pred_test1, squared=False)
     test1_r2 = r2_score(test1_data['reaction_energy'], pred_test1)
     print('##########################  Scores of Test1 Data  ##########################')
-    print('Test1 set MAE of {}: {:.3f}'.format(model, test1_mae))
-    print('Test1 set RMSE of {}: {:.3f}'.format(model, test1_rmse))
-    print('Test1 set R2 Score of {}: {:.3f}'.format(model, test1_r2))
+    print('Test1 set MAE of {}: {:.3f}'.format(model_name, test1_mae))
+    print('Test1 set RMSE of {}: {:.3f}'.format(model_name, test1_rmse))
+    print('Test1 set R2 Score of {}: {:.3f}'.format(model_name, test1_r2))
     
     print("----------------------------------------------------------------------------")
     
@@ -110,9 +112,9 @@ def modeling(train_encoded, test1_encoded, test2_encoded, model):
     test2_rmse = mean_squared_error(test2_data['reaction_energy'], pred_test2, squared=False)
     test2_r2 = r2_score(test2_data['reaction_energy'], pred_test2)
     print('##########################  Scores of Test2 Data  ##########################')
-    print('Test2 set MAE of {}: {:.3f}'.format(model, test2_mae))
-    print('Test2 set RMSE of {}: {:.3f}'.format(model, test2_rmse))
-    print('Test2 set R2 Score of {}: {:.3f}'.format(model, test2_r2))
+    print('Test2 set MAE of {}: {:.3f}'.format(model_name, test2_mae))
+    print('Test2 set RMSE of {}: {:.3f}'.format(model_name, test2_rmse))
+    print('Test2 set R2 Score of {}: {:.3f}'.format(model_name, test2_r2))
     
     print("----------------------------------------------------------------------------")
 
@@ -145,9 +147,10 @@ import xgboost as xgb
 
 # Model
 model = xgb.XGBRegressor(random_state=1, learning_rate=0.1, max_depth=7, reg_lambda=1.2)
+model_name = "XGBM"
 
 # Training
-modeling(train_encoded=train_encoded, test1_encoded=test1_encoded, test2_encoded=test2_encoded, model=model)
+modeling(train_encoded=train_encoded, test1_encoded=test1_encoded, test2_encoded=test2_encoded, model=model, model_name=model_name)
 
 
 
