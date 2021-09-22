@@ -30,7 +30,7 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 ## Project Files:
 
 
-**Data:** Contains the "all_data.csv" file. (Maybe an explanation???? )
+**Data:** Contains the row and processed data files 
 
 **Preprocess:** Contains data preprocessing including removing missing values and test/train splitting (requires different dependencies, to reproduce it please check the requirements on the folder)
 
