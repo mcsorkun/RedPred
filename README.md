@@ -5,13 +5,13 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 ## About RedPred Project:
 
-* RedPred is an reaction energy prediction model for redox flow battery molecules that consists ensemble of 3 ML algorithms (Graph Conv Neural Nets, Random Forest, and Deep Neural Nets).
+* RedPred is an redox energy prediction model for redox flow battery molecules that consists ensemble of 3 ML algorithms (Graph Conv Neural Nets, Random Forest, and Deep Neural Nets).
  
-* You can upload or type your SMILES used as a reactant in the redox reaction to get the reaction energy (Hartree).
+* The model takes the SMILES notations of reactant molecules of the redox reaction as an input and predicts the redox reaction energy (Hartree).
 
 * RedPred is trained on RedDB [1] publicly available redox flow battery candidate molecules dataset.
 
-* The performance of the RedPred is 0.0036 Hartree MAE on the test set.
+* The performance of the RedPred is 0.0036 and 0.0043 Hartree MAE on the test-1 and test-2 sets, respectively.
 
 * If you are using the predictions from RedPred on your work, please cite these papers: [1, 2] 
 
@@ -34,17 +34,9 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 **Preprocess:** Contains data preprocessing including removing missing values and test/train splitting (requires different dependencies, to reproduce it please check the requirements on the folder)
 
-**Ensemble:** Code for our final model for the project. We used 3 models for the ensemble model. So the file also contains their saved models and also predictions for Test 1 and  Test 2.
+**Ensemble:** Contains ensembling process of the selected 3 models. 
 
 **Models:** Contains final code file of 5 models that we used for RedPred project and ECFC encoder file.
-
-
-
-**Note:** Please put explanation for your new folders
-
-
-**Saved-model:** Contains a saved trained GCN model for initial prediction with first guess of hyperparameters 
-
 
 ------------------------------------------
 
